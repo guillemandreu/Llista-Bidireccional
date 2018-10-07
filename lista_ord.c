@@ -174,4 +174,22 @@ ListaBid LISTABID_destruye (ListaBid l) {
 
 	return l;
 }
+ListaBid LISTABID_anadirOrdenado(ListaBID 1, int ele ) {
+	Nodo * aux;
+	aux = l->ant;
+	int encontrado = 0;
+	int elem_consulta;
 
+	LISTABID_irPrincipio(l);
+	while (!LISTABID_final(*l) && !encontrado) { 
+		LISTABID_consultar(*l, &elem_consulta);
+		if (e < elem_consulta) {
+			encontrado = 1;
+		}
+		else {
+			LISTABID_avanzar(l);
+		}
+	}
+	LISTABID_anadir(l, e);
+
+}
