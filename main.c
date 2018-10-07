@@ -1,21 +1,44 @@
+#include <stdio.h>
+#include <lista_ord.h>
 
 
 
-
-void main (ListaOrd * 1) {
-
-	int ele;
+void main (ListaBid * l) {
+	ListaBid l_aux;
+	 
+	int opcio = 0;
 	
-		printf ( "Insereix el element que es vol ordenar:\n  ");
-		scanf ("%d%",&ele);
+		printf ("Benvingut!\n");
+		while (opcio != 2 ) {
 
-		if ( LISTAORD_vacia(ListaOrd 1) ) {
+			printf ("\n 1.-Inserir element ordenadament.");
+			printf ("\n 2.-Sortir ");
+			printf ("\n Opcio:");
+			scanf ("%d, &opcio ");
 
-			LISTAORD_crea( ListaOrd * 1 );
+			if ( opcio = 1 ) {
 
-		} else {
+				printf ( "Insereix el element que es vol ordenar:\n  ");
+				scanf ("%d",&l_aux.e);
 
-			LISTAORD_anadirOrdenado ( ListaOrd * 1, ele );
+				if ( LISTABID_vacia(ListaBid l) ) {
+
+					LISTABID_crea( ListaBid * l );
+					LISTABID_anadir ( ListaBid l, l_aux ); 
+
+				} else {
+	
+					LISTABID_anadirOrdenado ( ListaBid * l, l_aux );
+
+				}
+
+			} else { 
+				
+				printf ("\nGracies per utilitzar el nostre programa!");
+
+			}
+
+		}
 
 
 
